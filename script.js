@@ -47,5 +47,6 @@ document.getElementById("registrationForm").addEventListener("submit", function 
     //memberikan keterangan jika valid
     if (isValid) {
         alert("Your registration is successful");
+        document.getElementById("registrationForm").reset();
     }
 });
