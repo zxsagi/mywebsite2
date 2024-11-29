@@ -40,8 +40,8 @@ button {
 
 @media (max-width: 480px) {
     .calculator {
-        height: auto; /* Mengubah tinggi kalkulator agar tidak terlalu panjang di ponsel */
-        max-width: 280px; /* Lebar kalkulator lebih kecil di ponsel */
+        height: 75vh;
+        max-width: 280px;
         padding: 15px;
     }
 }
