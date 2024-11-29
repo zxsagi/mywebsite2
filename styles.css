@@ -38,6 +38,13 @@ button {
     transition: background-color 0.2s;
 }
 
+@media (max-width: 480px) {
+    .calculator {
+        height: auto; /* Mengubah tinggi kalkulator agar tidak terlalu panjang di ponsel */
+        max-width: 280px; /* Lebar kalkulator lebih kecil di ponsel */
+        padding: 15px;
+    }
+}
 
 @media only screen and (min-width: 700px) {
     .responsive-img {
