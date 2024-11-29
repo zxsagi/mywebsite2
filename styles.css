@@ -1,6 +1,5 @@
 .calculator {
     width: 280;
-    max-width: 320px;
     height: 75vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
