@@ -38,23 +38,12 @@ button {
     transition: background-color 0.2s;
 }
 
-@media (max-width: 768px) {
-    .calculator {
-        height: auto;
-        padding: 15px;
-    }
-}
-
 @media only screen and (min-width: 700px) {
     .responsive-img {
         max-width: 680px;
         display: block;
         margin: 0 auto;
 
-    }
-    .calculator {
-        height: auto;
-        padding: 15px;
     }
 }
 
