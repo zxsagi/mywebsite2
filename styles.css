@@ -1,6 +1,7 @@
 .calculator {
-    width: 280px;
-    height: 70vh;
+    width: 100%;
+    max-width: 320px;
+    height: 75vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
@@ -36,6 +37,13 @@ button {
     color: #333;
     font-weight: bold;
     transition: background-color 0.2s;
+}
+
+@media (max-width: 768px) {
+    .calculator {
+        height: auto;
+        padding: 15px;
+    }
 }
 
 @media only screen and (min-width: 700px) {
