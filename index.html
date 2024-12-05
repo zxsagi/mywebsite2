@@ -34,15 +34,65 @@
 
         <!-- Main Introduction Section -->
         <main class="bg-gray-200 shadow-lg p-6 rounded lg:col-span-2">
-            <h2 class="text-4xl font-bold mb-4">A Little Introduction!</h2>
-            <img src="Assets/picture/chenBDG.jpg" alt="Profile Sagi" class="w-full rounded-md mb-4">
-            <p class="font-mono italic">
-                Hello, My name is Sagi Setiono. I am a student at Universitas Advent Indonesia, 
-                majoring in Information Systems. I am interested in learning technology and web development, 
-                including HTML, CSS, Java, and others. Welcome to my personal website, 
-                where you can find more information about me, my work, and how to contact me.
-            </p>
+            <!-- Bagian Perkenalan -->
+            <section class="text-center mb-8">
+                <h2 class="text-4xl font-bold mb-4">A Little Introduction!</h2>
+                <button 
+                    onclick="toggleImage()" 
+                    class="px-6 py-2 bg-green-400 text-gray-700 font-bold italic rounded-md shadow-md hover:bg-teal-300 transition">
+                    Show my photo
+                </button>
+                <img 
+                    src="Assets/picture/chenBDG.jpg" 
+                    alt="Profile Sagi" 
+                    id="sagiProfile" 
+                    class="mt-6 hidden w-48 h-48 rounded-md mx-auto shadow-lg">
+                <p class="mt-4 font-mono italic text-gray-700 max-w-2xl mx-auto">
+                    Hello, My name is Sagi Setiono. I am a student at Universitas Advent Indonesia, 
+                    majoring in Information Systems. I am interested in learning technology and web development, 
+                    including HTML, CSS, Java, and others. Welcome to my personal website, 
+                    where you can find more information about me, my work, and how to contact me.
+                </p>
+            </section>
+        
+            <!-- Bagian Portofolio -->
+            <section>
+                <h2 class="text-4xl text-center font-semibold italic py-6">Portfolio</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Project 1 -->
+                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                        <img src="Assets/picture/joki.jpg" alt="Photo Sagi" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <p class="text-sm text-gray-600 font-semibold">On a motorbike, I learned that courage must be balanced with control.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Project 2 -->
+                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                        <img src="Assets/picture/mekanik.jpg" alt="Project 2" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <p class="text-sm text-gray-600 font-semibold">The machines I build are not just for speed, but to create history in every race.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Project 3 -->
+                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                        <img src="Assets/picture/motordrag.jpg" alt="Project 3" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <p class="text-sm text-gray-600 font-semibold">Every win is a testament to hard work, and I'm proud to see the machines I built continue to drive to the forefront.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
+        
+        <script>
+            function toggleImage() {
+                const image = document.getElementById("sagiProfile");
+                image.classList.toggle("hidden");
+            }
+        </script>
+        
 
         <!-- Social Media and Motivation Section -->
         <aside class="bg-teal-400 shadow-lg p-4 rounded">
